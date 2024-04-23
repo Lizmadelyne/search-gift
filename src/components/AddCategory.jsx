@@ -16,6 +16,12 @@ const AddCategory = ({ setCategory }) => {
     setValue("");
   //  console.log("enter form");
   };
+
+  const handleSearch = () => {
+    if (value.trim() !== "") {
+      searchGift({ preventDefault: () => {} }); // Llama a la función de búsqueda
+    }
+  };
   return (
     <div className="grid bg-slate-300 rounded-[10px] p-3 justify-center max-w-lg m-auto" >
       <h2 className="text-lg text-sky-950 p-2">Busca tu gift</h2>
@@ -29,9 +35,12 @@ const AddCategory = ({ setCategory }) => {
           placeholder="search gifts"
           
           onChange={(e) => setValue(e.target.value)}
-          value={value}
+          value={value} //borra lo escrito luego 
         />
-         <HiOutlineSearch/>
+        <div className="text-blue-600  cursor-pointer">
+        <HiOutlineSearch onClick={handleSearch} size={40}/>
+        </div>
+        
         </div>
         
 

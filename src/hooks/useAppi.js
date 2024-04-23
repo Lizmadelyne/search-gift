@@ -19,5 +19,6 @@ const useAppi = (url) =>{
         fetchApi();
     }, [url])
     return { loading, data}
-}
-export { useAppi };
+};
+
+export { useAppi};

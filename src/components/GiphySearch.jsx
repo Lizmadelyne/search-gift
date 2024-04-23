@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const GiphySearch = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('cat');
   const [gifs, setGifs] = useState([]);
 
   const handleSearch = async () => {
