@@ -1,5 +1,5 @@
 import {useAppi, } from "../hooks/useAppi";
-import { ImageItem } from "./imageItem";
+import { ImageItem } from "./ImageItem";
 
 const DisplayGifts = ({ category }) => {
   const url = ` https://api.giphy.com/v1/gifs/search?api_key=CZXJylR25Uq7SenjXIZT27czkhRA9y24&q=${category}&limit=6`;
